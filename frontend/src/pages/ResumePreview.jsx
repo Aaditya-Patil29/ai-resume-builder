@@ -85,7 +85,7 @@ function ResumePreview() {
               disabled={isGenerating}
               className="px-5 py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all flex items-center gap-2 font-medium shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isGenerating ? '⏳ Generating...' : '⬇️ Download PDF'}
+              {isGenerating ? '⏳ Generating...' : ' Download PDF'}
             </button>
           </div>
         </div>

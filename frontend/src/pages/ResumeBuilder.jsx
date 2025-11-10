@@ -385,7 +385,7 @@ function ResumeBuilder() {
             onClick={handlePreview}
             className="px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition shadow-sm font-medium"
           >
-            👁️ Preview Resume
+             Preview Resume
           </button>
         </div>
       </div>
