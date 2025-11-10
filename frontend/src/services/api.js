@@ -1,18 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API_BASE_URL = 'http://localhost:5000/api';
+export const API = axios.create({
+  baseURL: "http://localhost:5000/api",
+});
 
-export const createResume = async (resumeData) => {
-  return await axios.post(`${API_BASE_URL}/resumes`, resumeData);
-};
-
-export const analyzeResume = async (resumeData, jobDescription) => {
-  return await axios.post(`${API_BASE_URL}/resumes/analyze`, {
-    resumeData,
-    jobDescription
-  });
-};
-
-export const getResumes = async (userId) => {
-  return await axios.get(`${API_BASE_URL}/resumes/${userId}`);
-};
+// Example API calls
+export const testBackend = () => API.get("/test");
+export const createResume = (data) => API.post("/resume", data);
+export const analyzeResume = (data) => API.post("/analyze", data);
