@@ -26,7 +26,3 @@ This application allows users to:
 - Express.js
 - MongoDB + Mongoose
 
----
-
-## 📂 Folder Structure
-
