@@ -4,10 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home.jsx";
 import ResumeBuilder from "./ResumeBuilder.jsx";
 import Dashboard from "./Dashboard.jsx";
+import Templates from "./Templates.jsx";
 import ResumePreview from "./ResumePreview.jsx";
-
-
-
 
 function App() {
   return (
@@ -16,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/builder" element={<ResumeBuilder />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/templates" element={<Templates />} />
         <Route path="/preview" element={<ResumePreview />} />
       </Routes>
     </Router>
